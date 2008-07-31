@@ -6,7 +6,7 @@ What is mvn2-spring-jpa?
 
 This project is intended to serve as an example of an integration test using Maven 2, Spring 2,
 JPA, Hibernate 3, and HSQLDB.  I have intentionally left the project as simple as possible so
-that it might be useful to others that are trying to implements similar integration tests in their
+that it might be useful to others who are trying to implement similar integration tests in their
 projects.
 
 What's so great about mvn2-spring-jpa?
