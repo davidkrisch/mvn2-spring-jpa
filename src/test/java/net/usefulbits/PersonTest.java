@@ -1,7 +1,6 @@
 package net.usefulbits;
 
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
 
 import static org.junit.Assert.*;
@@ -69,7 +68,7 @@ public class PersonTest extends AbstractTransactionalJUnit4SpringContextTests {
     }
 
     private Person getSinglePerson() {
-        return simpleJdbcTemplate.queryForObject(
+        return jdbcTemplate.queryForObject(
                 "select * from person where id = ?", new PersonRowMapper(), 0);
     }
 
